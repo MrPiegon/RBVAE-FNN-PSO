@@ -12,3 +12,8 @@ This is the official implementation of "Exploring the Chemical Space of Ionic Li
 ## Dataset
 For the pre-training SMILES database, you can download the original Pubchem coumpound database at ftp://p.ncbi.nlm.nih.gov/pubchem/Compound/. the CO2 solubility dataset is in the Modeldata/CO2ModelData.xlsx
 
+## Training
+The RB-VAE can be pretrained, fine tuned and saved in RB-VAE/__main__.py by changing the corresponding arguments. After training VAE, the FNN can be trained and tested in FNN&PSO/MLPTraining.py. 
+
+## Screening & Designing
+All the screening and designing functions within the FNN&PSO/MLPTraining.py can be processed and customly modified. For calculating the SA score, please uses the RDKit-based implementation in https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score by Peter Ertl and Greg Landrum.
